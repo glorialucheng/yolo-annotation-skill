@@ -49,7 +49,7 @@ The exporter reads a flat image directory or a single source image. It writes a 
 
 ## Synchronize manual X-AnyLabeling edits to YOLO
 
-For requests such as “同步一下标签”, “转为 YOLO 格式”, or “同步为 YOLO 格式”, use [scripts/sync_xanylabeling_to_yolo.py](scripts/sync_xanylabeling_to_yolo.py) when the saved X-AnyLabeling JSON is the source. Inspect the requested folder and reuse the same label names and IDs used for export or training. Look for an existing mapping in the project, such as `classes.txt` or `data.yaml`. If it cannot be established, ask. Pass the same mapping options as the exporter.
+For requests such as “sync the labels,” “convert to YOLO format,” or “sync to YOLO format,” use [scripts/sync_xanylabeling_to_yolo.py](scripts/sync_xanylabeling_to_yolo.py) when the saved X-AnyLabeling JSON is the source. Inspect the requested folder and reuse the same label names and IDs used for export or training. Look for an existing mapping in the project, such as `classes.txt` or `data.yaml`. If it cannot be established, ask. Pass the same mapping options as the exporter.
 
 ```bash
 python3 scripts/sync_xanylabeling_to_yolo.py /path/to/json --classes-file /path/to/classes.txt
